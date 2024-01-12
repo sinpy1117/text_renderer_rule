@@ -38,7 +38,7 @@ def draw_box(img, pnts, color):
     :return:
     """
     if isinstance(pnts, np.ndarray):
-        pnts = pnts.astype(np.int32)
+        pnts = pnts.astype(int)
 
     if len(img.shape) > 2:
         dst = img
